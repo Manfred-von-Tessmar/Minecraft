@@ -1,0 +1,27 @@
+{
+  "_fv": 24,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "pistole",
+    "customModelName": "Normal",
+    "name": "Waffe",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Fishing rod",
+    "harvestLevel": 20,
+    "efficiency": 11.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 20.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "immuneToFire": false,
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

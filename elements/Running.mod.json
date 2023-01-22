@@ -1,0 +1,21 @@
+{
+  "_fv": 24,
+  "_type": "potion",
+  "definition": {
+    "potionName": "Running of bottle",
+    "splashName": "Splash Potion of Running",
+    "lingeringName": "Lingering Potion of Running",
+    "arrowName": "Arrow of Running",
+    "effects": [
+      {
+        "effect": {
+          "value": "SPEED"
+        },
+        "duration": 3600,
+        "amplifier": 5,
+        "ambient": false,
+        "showParticles": true
+      }
+    ]
+  }
+}

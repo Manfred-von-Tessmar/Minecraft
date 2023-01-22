@@ -1,0 +1,57 @@
+{
+  "_fv": 24,
+  "_type": "fluid",
+  "definition": {
+    "name": "Milk",
+    "bucketName": "Milcheimer",
+    "textureStill": "milk",
+    "textureFlowing": "milk",
+    "tintType": "No tint",
+    "canMultiply": false,
+    "flowRate": 10,
+    "levelDecrease": 8,
+    "slopeFindDistance": 4,
+    "spawnParticles": false,
+    "dripParticle": {
+      "value": "EXPLOSION_NORMAL"
+    },
+    "flowStrength": 0.0,
+    "luminosity": 0,
+    "density": 1000,
+    "viscosity": 1000,
+    "isGas": false,
+    "temperature": 300,
+    "type": "LAVA",
+    "generateBucket": true,
+    "textureBucket": "",
+    "creativeTab": {
+      "value": "No creative tab entry"
+    },
+    "emptySound": {
+      "value": "block.grass.fall"
+    },
+    "rarity": "COMMON",
+    "specialInfo": [],
+    "resistance": 100.0,
+    "luminance": 15,
+    "lightOpacity": 0,
+    "emissiveRendering": false,
+    "tickRate": 10,
+    "flammability": 50,
+    "fireSpreadSpeed": 0,
+    "colorOnMap": "ICE",
+    "frequencyOnChunks": 5,
+    "spawnWorldTypes": [
+      "Surface",
+      "Surface"
+    ],
+    "restrictionBiomes": [
+      {
+        "value": "CUSTOM:NAITbiom"
+      },
+      {
+        "value": "CUSTOM:MrGlowstone"
+      }
+    ]
+  }
+}

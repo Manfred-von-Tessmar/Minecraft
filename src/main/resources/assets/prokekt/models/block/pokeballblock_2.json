@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prokekt:blocks/pokeballblock2",
+    "up": "prokekt:blocks/pokeballblock2",
+    "north": "prokekt:blocks/pokeballblock2",
+    "east": "prokekt:blocks/pokeballblock2",
+    "south": "prokekt:blocks/pokeballblock2",
+    "west": "prokekt:blocks/pokeballblock2",
+    "particle": "prokekt:blocks/pokeballblock2"
+  }
+}

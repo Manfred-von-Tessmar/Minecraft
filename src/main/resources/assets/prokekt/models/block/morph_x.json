@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prokekt:blocks/scheise",
+    "up": "prokekt:blocks/scheise",
+    "north": "prokekt:blocks/scheise",
+    "east": "prokekt:blocks/scheise",
+    "south": "prokekt:blocks/scheise",
+    "west": "prokekt:blocks/scheise",
+    "particle": "prokekt:blocks/scheise"
+  }
+}

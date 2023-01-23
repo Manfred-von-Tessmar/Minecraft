@@ -8,7 +8,7 @@
     "name": "Switsch",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:NeuesZeug"
     },
     "stackSize": 64,
     "enchantability": 0,

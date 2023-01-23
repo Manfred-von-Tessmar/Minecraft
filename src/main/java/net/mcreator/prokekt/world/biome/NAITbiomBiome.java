@@ -28,6 +28,7 @@ import net.minecraft.world.gen.feature.BaseTreeFeatureConfig;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
 import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.SoundAdditionsAmbience;
+import net.minecraft.world.biome.ParticleEffectAmbience;
 import net.minecraft.world.biome.MoodSoundAmbience;
 import net.minecraft.world.biome.MobSpawnInfo;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
@@ -44,6 +45,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.RegistryKey;
 import net.minecraft.util.Direction;
 import net.minecraft.state.BooleanProperty;
+import net.minecraft.particles.ParticleTypes;
 import net.minecraft.client.audio.BackgroundMusicSelector;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
@@ -68,7 +70,7 @@ public class NAITbiomBiome extends ProkektModElements.ModElement {
 		public void registerBiomes(RegistryEvent.Register<Biome> event) {
 			if (biome == null) {
 				BiomeAmbience effects = new BiomeAmbience.Builder().setFogColor(-16737895).setWaterColor(-16776961).setWaterFogColor(-16777012)
-						.withSkyColor(-16737895).withFoliageColor(-13369600).withGrassColor(-10027213)
+						.withSkyColor(-16737895).withFoliageColor(-10066177).withGrassColor(-6724096)
 						.setAmbientSound((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("ambient.cave")))
 						.setMoodSound(
 								new MoodSoundAmbience(
@@ -79,22 +81,25 @@ public class NAITbiomBiome extends ProkektModElements.ModElement {
 								.getValue(new ResourceLocation("ambient.crimson_forest.mood")), 0.0111D))
 						.setMusic(new BackgroundMusicSelector((net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS
 								.getValue(new ResourceLocation("ambient.crimson_forest.mood")), 12000, 24000, true))
-						.build();
+						.setParticle(new ParticleEffectAmbience(ParticleTypes.EXPLOSION, 0.1f)).build();
 				BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder()
 						.withSurfaceBuilder(SurfaceBuilder.DEFAULT.func_242929_a(new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
 								Blocks.STONE.getDefaultState(), Blocks.STONE.getDefaultState())));
+				biomeGenerationSettings.withStructure(StructureFeatures.MINESHAFT);
+				biomeGenerationSettings.withStructure(StructureFeatures.PILLAGER_OUTPOST);
 				biomeGenerationSettings.withStructure(StructureFeatures.VILLAGE_DESERT);
 				biomeGenerationSettings.withStructure(StructureFeatures.MANSION);
+				biomeGenerationSettings.withStructure(StructureFeatures.SHIPWRECK);
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.TREE
-						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.RED_TULIP.getDefaultState()),
-								new SimpleBlockStateProvider(Blocks.SPRUCE_LOG.getDefaultState()),
+						.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.JUNGLE_LOG.getDefaultState()),
+								new SimpleBlockStateProvider(Blocks.JUNGLE_LOG.getDefaultState()),
 								new BlobFoliagePlacer(FeatureSpread.func_242252_a(2), FeatureSpread.func_242252_a(0), 3),
-								new StraightTrunkPlacer(7, 2, 0), new TwoLayerFeature(1, 0, 1)))
+								new StraightTrunkPlacer(10, 2, 0), new TwoLayerFeature(1, 0, 1)))
 										.setDecorators(ImmutableList.of(CustomLeaveVineTreeDecorator.instance, CustomTrunkVineTreeDecorator.instance,
 												new CustomCocoaTreeDecorator()))
 										.setMaxWaterDepth(20).build())
 						.withPlacement(Features.Placements.HEIGHTMAP_PLACEMENT)
-						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(1, 0.1F, 1))));
+						.withPlacement(Placement.COUNT_EXTRA.configure(new AtSurfaceWithExtraConfig(2, 0.1F, 1))));
 				biomeGenerationSettings.withFeature(GenerationStage.Decoration.VEGETAL_DECORATION,
 						Feature.RANDOM_PATCH.withConfiguration(Features.Configs.GRASS_PATCH_CONFIG).withPlacement(Features.Placements.PATCH_PLACEMENT)
 								.withPlacement(Placement.COUNT_NOISE.configure(new NoiseDependant(-0.8D, 5, 4))));
@@ -106,8 +111,8 @@ public class NAITbiomBiome extends ProkektModElements.ModElement {
 				DefaultBiomeFeatures.withOverworldOres(biomeGenerationSettings);
 				DefaultBiomeFeatures.withFrozenTopLayer(biomeGenerationSettings);
 				MobSpawnInfo.Builder mobSpawnInfo = new MobSpawnInfo.Builder().isValidSpawnBiomeForPlayer();
-				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.PLAINS).depth(0.1f).scale(0.2f)
-						.temperature(0.5f).downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
+				biome = new Biome.Builder().precipitation(Biome.RainType.RAIN).category(Biome.Category.PLAINS).depth(1f).scale(0.2f).temperature(0.5f)
+						.downfall(0.5f).setEffects(effects).withMobSpawnSettings(mobSpawnInfo.copy())
 						.withGenerationSettings(biomeGenerationSettings.build()).build();
 				event.getRegistry().register(biome.setRegistryName("prokekt:nai_tbiom"));
 			}
@@ -135,7 +140,7 @@ public class NAITbiomBiome extends ProkektModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, Blocks.GRASS.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, Blocks.VINE.getDefaultState(), sbc, mbb);
 		}
 	}
 
@@ -156,7 +161,7 @@ public class NAITbiomBiome extends ProkektModElements.ModElement {
 
 		@Override
 		protected void func_227424_a_(IWorldWriter ww, BlockPos bp, BooleanProperty bpr, Set<BlockPos> sbc, MutableBoundingBox mbb) {
-			this.func_227423_a_(ww, bp, Blocks.GRASS.getDefaultState(), sbc, mbb);
+			this.func_227423_a_(ww, bp, Blocks.VINE.getDefaultState(), sbc, mbb);
 		}
 	}
 
@@ -192,7 +197,7 @@ public class NAITbiomBiome extends ProkektModElements.ModElement {
 							Direction direction1 = direction.getOpposite();
 							BlockPos blockpos = p_242865_5_.add(direction1.getXOffset(), 0, direction1.getZOffset());
 							if (Feature.isAirAt(p_225576_1_, blockpos)) {
-								BlockState blockstate = Blocks.SWEET_BERRY_BUSH.getDefaultState();
+								BlockState blockstate = Blocks.END_PORTAL.getDefaultState();
 								this.func_227423_a_(p_225576_1_, blockpos, blockstate, p_225576_5_, p_225576_6_);
 							}
 						}

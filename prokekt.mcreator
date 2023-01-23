@@ -183,6 +183,126 @@
       "metadata": {
         "gb": true
       }
+    },
+    {
+      "name": "MINIGUNN",
+      "type": "rangeditem",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "minigunn"
+    },
+    {
+      "name": "Kiste",
+      "type": "loottable",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kiste"
+    },
+    {
+      "name": "K",
+      "type": "recipe",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "k"
+    },
+    {
+      "name": "Sky",
+      "type": "dimension",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "sky",
+      "metadata": {
+        "ep": true
+      }
+    },
+    {
+      "name": "Portalblock",
+      "type": "block",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portalblock"
+    },
+    {
+      "name": "Portalblocke",
+      "type": "fuel",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "portalblocke"
+    },
+    {
+      "name": "DimensionBetreten",
+      "type": "achievement",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dimension_betreten"
+    },
+    {
+      "name": "NeuesZeug",
+      "type": "tab",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "neues_zeug"
+    },
+    {
+      "name": "Spitzhacke",
+      "type": "tool",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spitzhacke"
+    },
+    {
+      "name": "Spongebob",
+      "type": "block",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spongebob"
+    },
+    {
+      "name": "MorphX",
+      "type": "block",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "morph_x"
+    },
+    {
+      "name": "Morphxx",
+      "type": "fuel",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "morphxx"
+    },
+    {
+      "name": "GeschutzTurm",
+      "type": "rangeditem",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "geschutz_turm"
     }
   ],
   "variable_elements": [],
@@ -192,22 +312,32 @@
       "block.prokekt.pokeboalblock": "Pokeboalblock",
       "block.prokekt.milk": "Milk",
       "item.minecraft.lingering_potion.effect.running": "Lingering Potion of Running",
-      "item.minecraft.tipped_arrow.effect.running": "Arrow of Running",
-      "item.minecraft.potion.effect.running": "Running of bottle",
+      "advancements.dimension_betreten.title": "Dimension Betreten",
       "item.prokekt.switsch": "Switsch",
       "enchantment.prokekt.regenarion": "Regenarion",
       "item.prokekt.blaubeere": "Blaubeere",
-      "biome.prokekt.nai_tbiom": "NAITBIOM",
+      "biome.prokekt.nai_tbiom": "nachtbiom",
       "biome.prokekt.mr_glowstone": "Mr Glowstone",
-      "block.prokekt.pokeballblock_3": "Pokeballblock 3",
       "item.minecraft.splash_potion.effect.running": "Splash Potion of Running",
-      "block.prokekt.pokeballblock_2": "Hyperball",
       "item.prokekt.bomb": "Bombe",
       "item.prokekt.waffe": "Waffe",
       "item.prokekt.sculk_waffe": "Sculk Waffe",
+      "block.prokekt.portalblock": "Portalblock",
+      "block.prokekt.morph_x": "Morph X",
       "item.prokekt.schwammspitzhacke": "Prank",
+      "item.prokekt.geschutz_turm": "Geschutz Turm",
       "fluid.prokekt.milk": "Milk",
-      "item.prokekt.milk_bucket": "Milcheimer"
+      "item.prokekt.spitzhacke": "Spitzhacke",
+      "item.prokekt.minigunn": "MINIGUNN",
+      "item.minecraft.tipped_arrow.effect.running": "Arrow of Running",
+      "item.minecraft.potion.effect.running": "Running of bottle",
+      "itemGroup.tabneues_zeug": "Neues Zeug",
+      "item.prokekt.sky": "Sky Portal Igniter",
+      "block.prokekt.pokeballblock_3": "Pokeballblock 3",
+      "block.prokekt.pokeballblock_2": "Hyperball",
+      "advancements.dimension_betreten.descr": "Du hast es Geschafft die Himmelsdimension zu Betreten",
+      "item.prokekt.milk_bucket": "Milcheimer",
+      "block.prokekt.spongebob": "Spongebob"
     }
   },
   "foldersRoot": {

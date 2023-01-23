@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prokekt:blocks/portalblock",
+    "up": "prokekt:blocks/portalblock",
+    "north": "prokekt:blocks/portalblock",
+    "east": "prokekt:blocks/portalblock",
+    "south": "prokekt:blocks/portalblock",
+    "west": "prokekt:blocks/portalblock",
+    "particle": "prokekt:blocks/portalblock"
+  }
+}

@@ -21,11 +21,11 @@ import java.util.List;
 import java.util.Collections;
 
 @ProkektModElements.ModElement.Tag
-public class Pokeballblock3Block extends ProkektModElements.ModElement {
-	@ObjectHolder("prokekt:pokeballblock_3")
+public class SpongebobBlock extends ProkektModElements.ModElement {
+	@ObjectHolder("prokekt:spongebob")
 	public static final Block block = null;
-	public Pokeballblock3Block(ProkektModElements instance) {
-		super(instance, 23);
+	public SpongebobBlock(ProkektModElements instance) {
+		super(instance, 39);
 	}
 
 	@Override
@@ -35,9 +35,8 @@ public class Pokeballblock3Block extends ProkektModElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0)
-					.slipperiness(5f));
-			setRegistryName("pokeballblock_3");
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.GROUND).hardnessAndResistance(1f, 10f).setLightLevel(s -> 0));
+			setRegistryName("spongebob");
 		}
 
 		@Override

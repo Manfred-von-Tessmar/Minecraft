@@ -1,0 +1,11 @@
+{
+  "_fv": 24,
+  "_type": "tab",
+  "definition": {
+    "name": "Neues Zeug",
+    "icon": {
+      "value": "CUSTOM:Sky"
+    },
+    "showSearch": true
+  }
+}

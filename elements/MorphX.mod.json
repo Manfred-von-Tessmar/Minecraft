@@ -2,12 +2,12 @@
   "_fv": 24,
   "_type": "block",
   "definition": {
-    "texture": "pokeballblock3",
-    "textureTop": "pokeballblock3",
-    "textureLeft": "pokeballblock3",
-    "textureFront": "pokeballblock3",
-    "textureRight": "pokeballblock3",
-    "textureBack": "pokeballblock3",
+    "texture": "scheise",
+    "textureTop": "scheise",
+    "textureLeft": "scheise",
+    "textureFront": "scheise",
+    "textureRight": "scheise",
+    "textureBack": "scheise",
     "renderType": 10,
     "customModelName": "Normal",
     "rotationMode": 0,
@@ -32,7 +32,7 @@
         "subtract": false
       }
     ],
-    "name": "Pokeballblock 3",
+    "name": "Morph X",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -43,9 +43,9 @@
     },
     "destroyTool": "Not specified",
     "customDrop": {
-      "value": ""
+      "value": "CUSTOM:MorphX"
     },
-    "dropAmount": 1,
+    "dropAmount": 5,
     "useLootTableForDrops": false,
     "enchantPowerBonus": 0.0,
     "plantsGrowOn": false,
@@ -70,11 +70,11 @@
     "flammability": 0,
     "fireSpreadSpeed": 0,
     "isLadder": false,
-    "slipperiness": 5.0,
+    "slipperiness": 0.6,
     "speedFactor": 1.0,
     "jumpFactor": 1.0,
     "reactionToPushing": "NORMAL",
-    "isNotColidable": false,
+    "isNotColidable": true,
     "isCustomSoundType": false,
     "soundOnStep": {
       "value": "GROUND"
@@ -130,7 +130,7 @@
     ],
     "frequencyPerChunks": 10,
     "frequencyOnChunk": 16,
-    "minGenerateHeight": 0,
-    "maxGenerateHeight": 64
+    "minGenerateHeight": 100,
+    "maxGenerateHeight": 120
   }
 }

@@ -2,7 +2,7 @@
   "_fv": 24,
   "_type": "biome",
   "definition": {
-    "name": "NAITBIOM",
+    "name": "nachtbiom",
     "groundBlock": {
       "value": "Blocks.GRASS"
     },
@@ -14,11 +14,11 @@
       "falpha": 0.0
     },
     "grassColor": {
-      "value": -10027213,
+      "value": -6724096,
       "falpha": 0.0
     },
     "foliageColor": {
-      "value": -13369600,
+      "value": -10066177,
       "falpha": 0.0
     },
     "waterColor": {
@@ -42,18 +42,18 @@
       "value": "ambient.basalt_deltas.additions"
     },
     "moodSoundDelay": 6000,
-    "spawnParticles": false,
+    "spawnParticles": true,
     "particleToSpawn": {
       "value": "EXPLOSION_NORMAL"
     },
-    "particlesProbability": 0.5,
+    "particlesProbability": 10.0,
     "biomeCategory": "PLAINS",
     "parent": {
-      "value": "No parent"
+      "value": "CUSTOM:NAITbiom"
     },
     "rainingPossibility": 0.5,
     "temperature": 0.5,
-    "baseHeight": 0.1,
+    "baseHeight": 1.0,
     "heightVariation": 0.2,
     "biomeType": "WARM",
     "spawnBiome": true,
@@ -68,33 +68,33 @@
     "gravelPatchesPerChunk": 0,
     "reedsPerChunk": 0,
     "cactiPerChunk": 0,
-    "treesPerChunk": 1,
+    "treesPerChunk": 2,
     "vanillaTreeType": "Default",
     "treeType": 1,
-    "minHeight": 7,
+    "minHeight": 10,
     "maxWaterDepth": 20,
     "treeStem": {
-      "value": "Blocks.RED_FLOWER#4"
+      "value": "Blocks.LOG#3"
     },
     "treeBranch": {
-      "value": "Blocks.LOG#1"
+      "value": "Blocks.LOG#3"
     },
     "treeVines": {
-      "value": "Blocks.TALLGRASS"
+      "value": "Blocks.VINE"
     },
     "treeFruits": {
-      "value": "Blocks.SWEET_BERRY_BUSH"
+      "value": "Blocks.END_PORTAL"
     },
     "spawnStronghold": false,
-    "spawnMineshaft": false,
-    "spawnPillagerOutpost": false,
+    "spawnMineshaft": true,
+    "spawnPillagerOutpost": true,
     "villageType": "desert",
     "spawnWoodlandMansion": true,
     "spawnJungleTemple": false,
     "spawnDesertPyramid": false,
     "spawnIgloo": false,
     "spawnOceanMonument": false,
-    "spawnShipwreck": false,
+    "spawnShipwreck": true,
     "oceanRuinType": "NONE",
     "defaultFeatures": [
       "Caves",

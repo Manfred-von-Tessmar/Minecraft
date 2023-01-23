@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "prokekt:block/sky_portal_ew"
+    },
+    "axis=x": {
+      "model": "prokekt:block/sky_portal_ns"
+    }
+  }
+}

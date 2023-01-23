@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "prokekt:blocks/spongespob",
+    "up": "prokekt:blocks/spongespob",
+    "north": "prokekt:blocks/spongespob",
+    "east": "prokekt:blocks/spongespob",
+    "south": "prokekt:blocks/spongespob",
+    "west": "prokekt:blocks/spongespob",
+    "particle": "prokekt:blocks/spongespob"
+  }
+}
